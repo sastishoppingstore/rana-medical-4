@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { asset } from "../../lib/assets";
 import { motion } from 'framer-motion';
 import { Stethoscope, Ambulance, Scissors, Scan, Baby, HeartPulse, Bone, Smile, Dumbbell, ArrowRight, Activity, Pill, Eye, Brain } from 'lucide-react';
 import { api } from '../../lib/api';
@@ -31,7 +32,7 @@ export default function Services() {
                 <motion.div key={s.id} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.08 }}
                   whileHover={{ y: -8 }} className="card-premium overflow-hidden group">
                   <div className="relative h-40 overflow-hidden">
-                    <img src={s.image_url || `${import.meta.env.BASE_URL}images/facility-lab.jpg`} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                    <img src={s.image_url || asset("images/facility-lab.jpg")} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/70 to-transparent" />
                     <span className="absolute top-3 left-3 w-11 h-11 rounded-xl bg-white/90 text-medical-teal grid place-items-center shadow"><Icon size={22} /></span>
                   </div>
