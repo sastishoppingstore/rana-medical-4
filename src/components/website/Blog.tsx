@@ -25,7 +25,7 @@ export default function Blog() {
             {posts.map((p, i) => (
               <motion.div key={p.id} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: (i % 3) * 0.08 }}
                 className="card-premium overflow-hidden flex flex-col">
-                <img src={p.image_url || '/images/medical-team.jpg'} alt={p.title} className="h-44 w-full object-cover" />
+                <img src={p.image_url || `${import.meta.env.BASE_URL}images/medical-team.jpg`} alt={p.title} className="h-44 w-full object-cover" />
                 <div className="p-5 flex flex-col flex-1">
                   <div className="flex items-center gap-3 text-xs text-slate-400 mb-2">
                     <span className="flex items-center gap-1"><CalendarDays size={13} /> {formatDate(p.published_at)}</span>
@@ -44,7 +44,7 @@ export default function Blog() {
       <Modal open={!!active} onClose={() => setActive(null)} title={active?.title} wide>
         {active && (
           <div>
-            <img src={active.image_url || '/images/medical-team.jpg'} alt="" className="w-full h-56 object-cover rounded-2xl mb-4" />
+            <img src={active.image_url || `${import.meta.env.BASE_URL}images/medical-team.jpg`} alt="" className="w-full h-56 object-cover rounded-2xl mb-4" />
             <div className="flex items-center gap-3 text-xs text-slate-400 mb-3">
               <span className="flex items-center gap-1"><CalendarDays size={13} /> {formatDate(active.published_at)}</span>
               <span className="flex items-center gap-1"><User size={13} /> {active.author}</span>

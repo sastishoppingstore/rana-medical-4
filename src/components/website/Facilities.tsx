@@ -3,14 +3,14 @@ import { SectionHeading, Reveal } from '../ui/primitives';
 import { Activity, Radio, HeartPulse, Scissors, Baby, BedDouble, Star, Microscope } from 'lucide-react';
 
 const facilities = [
-  { title: 'Digital X-Ray', desc: 'Low-radiation digital radiography with instant imaging.', img: '/images/facility-ot.jpg', Icon: Activity },
-  { title: '4D Ultrasound', desc: 'High-resolution imaging for obstetrics and abdomen.', img: '/images/facility-ultrasound.jpg', Icon: Radio },
-  { title: 'ECG / Echo', desc: 'Comprehensive cardiac diagnostics and monitoring.', img: '/images/facility-icu.jpg', Icon: HeartPulse },
-  { title: 'Modular Operation Theatre', desc: 'Sterile, laminar-flow theatres for safe surgery.', img: '/images/facility-ot.jpg', Icon: Scissors },
-  { title: 'NICU', desc: 'Neonatal intensive care for the tiniest patients.', img: '/images/facility-icu.jpg', Icon: Baby },
-  { title: 'Private & VIP Rooms', desc: 'Comfortable recovery spaces with hotel-grade amenities.', img: '/images/facility-room.jpg', Icon: BedDouble },
-  { title: 'Advanced Laboratory', desc: 'Fully automated pathology with online reports.', img: '/images/facility-lab.jpg', Icon: Microscope },
-  { title: 'ICU', desc: '24/7 critical care with multi-parameter monitoring.', img: '/images/facility-icu.jpg', Icon: Star },
+  { title: 'Digital X-Ray', desc: 'Low-radiation digital radiography with instant imaging.', img: `${import.meta.env.BASE_URL}images/facility-ot.jpg`, Icon: Activity },
+  { title: '4D Ultrasound', desc: 'High-resolution imaging for obstetrics and abdomen.', img: `${import.meta.env.BASE_URL}images/facility-ultrasound.jpg`, Icon: Radio },
+  { title: 'ECG / Echo', desc: 'Comprehensive cardiac diagnostics and monitoring.', img: `${import.meta.env.BASE_URL}images/facility-icu.jpg`, Icon: HeartPulse },
+  { title: 'Modular Operation Theatre', desc: 'Sterile, laminar-flow theatres for safe surgery.', img: `${import.meta.env.BASE_URL}images/facility-ot.jpg`, Icon: Scissors },
+  { title: 'NICU', desc: 'Neonatal intensive care for the tiniest patients.', img: `${import.meta.env.BASE_URL}images/facility-icu.jpg`, Icon: Baby },
+  { title: 'Private & VIP Rooms', desc: 'Comfortable recovery spaces with hotel-grade amenities.', img: `${import.meta.env.BASE_URL}images/facility-room.jpg`, Icon: BedDouble },
+  { title: 'Advanced Laboratory', desc: 'Fully automated pathology with online reports.', img: `${import.meta.env.BASE_URL}images/facility-lab.jpg`, Icon: Microscope },
+  { title: 'ICU', desc: '24/7 critical care with multi-parameter monitoring.', img: `${import.meta.env.BASE_URL}images/facility-icu.jpg`, Icon: Star },
 ];
 
 export default function Facilities() {

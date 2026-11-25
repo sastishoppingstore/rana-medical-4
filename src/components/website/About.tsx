@@ -24,7 +24,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-10 items-center mb-14">
           <Reveal>
             <div className="relative">
-              <img src="/images/about-hospital.jpg" alt="Hospital" className="rounded-3xl shadow-premium w-full object-cover h-[360px]" />
+              <img src={`${import.meta.env.BASE_URL}images/about-hospital.jpg`} alt="Hospital" className="rounded-3xl shadow-premium w-full object-cover h-[360px]" />
               <div className="absolute -bottom-6 -right-4 glass rounded-2xl shadow-premium p-4 max-w-[200px]">
                 <p className="font-display font-bold text-medical-teal text-2xl">Since 2009</p>
                 <p className="text-xs text-slate-500">Serving the community with care</p>
@@ -71,7 +71,7 @@ export default function About() {
         {/* Gallery */}
         <h3 className="font-display text-2xl font-bold text-deep-navy mb-5">Hospital Gallery</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-          {['/images/facility-room.jpg', '/images/facility-ot.jpg', '/images/facility-icu.jpg', '/images/facility-lab.jpg'].map((src, i) => (
+          {[`${import.meta.env.BASE_URL}images/facility-room.jpg`, `${import.meta.env.BASE_URL}images/facility-ot.jpg`, `${import.meta.env.BASE_URL}images/facility-icu.jpg`, `${import.meta.env.BASE_URL}images/facility-lab.jpg`].map((src, i) => (
             <motion.div key={src} whileHover={{ scale: 1.03 }} className="rounded-2xl overflow-hidden shadow-soft h-40">
               <img src={src} alt="" className="w-full h-full object-cover" />
             </motion.div>
