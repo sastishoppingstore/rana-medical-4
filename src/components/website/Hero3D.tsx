@@ -132,7 +132,7 @@ function FloatingBits({ size }: { size: number }) {
     { Icon: HeartPulse, cls: 'text-rose-500 bg-white', top: '-6%', left: '8%', s: 40 },
     { Icon: Activity, cls: 'text-medical-teal bg-white', top: '12%', right: '-4%', s: 36 },
     { Icon: ShieldCheck, cls: 'text-royal-blue bg-white', bottom: '6%', left: '-2%', s: 38 },
-    { Icon: Stethoscope, cls: 'text-emerald-600 bg-white', bottom: '-4%', right: '10%', s: 34 },
+    { Icon: Stethoscope, cls: 'text-[#a02030] bg-white', bottom: '-4%', right: '10%', s: 34 },
   ];
   return (
     <>
@@ -168,7 +168,7 @@ export default function Hero3D() {
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="#appointment" className="btn-primary">Book Online Appointment</a>
             <a href={HOSPITAL.whatsapp} target="_blank" rel="noreferrer" className="btn-ghost">
-              <MessageCircle size={18} className="text-emerald-500" /> WhatsApp Emergency
+              <MessageCircle size={18} className="text-[#c02736]" /> WhatsApp Emergency
             </a>
             <a href="#services" className="btn-ghost">Explore Our Services</a>
           </div>

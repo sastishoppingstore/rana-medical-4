@@ -129,9 +129,9 @@ export default function Lab() {
                 <div className="flex items-center gap-2">
                   <StatusBadge status={s.status} />
                   {s.status === 'collected' && <button onClick={() => { setEditing(s); setResultValue(''); setFlag('N'); }} className="btn-ghost !py-1.5 !px-3 text-xs"><FlaskConical size={14} /> Result</button>}
-                  {s.status === 'entered' && !s.verified && <button onClick={() => verify(s)} className="btn-ghost !py-1.5 !px-3 text-xs text-blue-600"><CheckCircle2 size={14} /> Verify</button>}
+                  {s.status === 'entered' && !s.verified && <button onClick={() => verify(s)} className="btn-ghost !py-1.5 !px-3 text-xs text-[#23244a]"><CheckCircle2 size={14} /> Verify</button>}
                   {s.status === 'entered' && s.verified && <button onClick={() => publish(s)} className="btn-primary !py-1.5 !px-3 text-xs"><Send size={14} /> Publish</button>}
-                  {s.status === 'published' && <span className="text-xs text-emerald-600 flex items-center gap-1"><ShieldCheck size={14} /> Published</span>}
+                  {s.status === 'published' && <span className="text-xs text-[#a02030] flex items-center gap-1"><ShieldCheck size={14} /> Published</span>}
                 </div>
               </div>
             ))}

@@ -141,7 +141,7 @@ export default function AppointmentFinder() {
           <div className="absolute inset-0 bg-deep-navy/50 backdrop-blur-sm" onClick={() => setResult(null)} />
           <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="relative card-premium p-8 max-w-md w-full text-center">
             <button className="absolute top-3 right-3" onClick={() => setResult(null)}><X size={18} className="text-slate-400" /></button>
-            <div className="w-16 h-16 mx-auto rounded-full bg-emerald-100 text-medical-teal grid place-items-center mb-4"><CheckCircle2 size={34} /></div>
+            <div className="w-16 h-16 mx-auto rounded-full bg-[#fdeef0] text-medical-teal grid place-items-center mb-4"><CheckCircle2 size={34} /></div>
             <h3 className="font-display text-xl font-bold">Appointment Confirmed</h3>
             <div className="mt-4 space-y-2 text-sm">
               <div className="flex justify-between border-b pb-2"><span className="text-slate-500">Reference</span><b>{result.reference}</b></div>

@@ -81,7 +81,7 @@ export default function LabReportPortal() {
                 </tbody>
               </table>
               <div className="mt-5 flex items-center justify-between">
-                <span className={`inline-flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-full ${report.authorized ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>
+                <span className={`inline-flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-full ${report.authorized ? 'bg-[#fdeef0] text-[#8f1d28]' : 'bg-amber-100 text-amber-700'}`}>
                   <ShieldCheck size={14} /> {report.authorized ? 'Authorized & Published' : 'Pending Authorization'}
                 </span>
                 <span className="flex items-center gap-2 text-slate-400 text-xs"><QrCode size={40} /> Scan to verify authenticity</span>

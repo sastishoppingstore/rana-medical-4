@@ -62,7 +62,7 @@ export default function Accounts() {
       <PageHeader title="Accounts & Hisab-Kitab" subtitle="Auditable financials — income, expenses and net profit from real records." />
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        <ErpCard><p className="text-xs text-slate-400">Total Income</p><p className="font-display text-2xl font-extrabold text-emerald-600">{PKR(income.total)}</p></ErpCard>
+        <ErpCard><p className="text-xs text-slate-400">Total Income</p><p className="font-display text-2xl font-extrabold text-[#a02030]">{PKR(income.total)}</p></ErpCard>
         <ErpCard><p className="text-xs text-slate-400">Total Expense</p><p className="font-display text-2xl font-extrabold text-rose-500">{PKR(totalExpense)}</p></ErpCard>
         <ErpCard><p className="text-xs text-slate-400">Net Profit</p><p className="font-display text-2xl font-extrabold text-medical-teal">{PKR(net)}</p></ErpCard>
         <ErpCard><p className="text-xs text-slate-400">Outstanding</p><p className="font-display text-2xl font-extrabold text-amber-500">{PKR(outstanding)}</p></ErpCard>

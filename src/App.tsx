@@ -12,6 +12,7 @@ import Pharmacy from './components/erp/Pharmacy.tsx'
 import Accounts from './components/erp/Accounts.tsx'
 import Hr from './components/erp/Hr.tsx'
 import Cms from './components/erp/Cms.tsx'
+import NotFound from './pages/NotFound.tsx'
 
 export default function App() {
   return (
@@ -31,7 +32,9 @@ export default function App() {
           <Route path="accounts" element={<Accounts />} />
           <Route path="hr" element={<Hr />} />
           <Route path="cms" element={<Cms />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

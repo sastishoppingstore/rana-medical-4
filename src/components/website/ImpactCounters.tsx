@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { Users, Stethoscope, Ambulance, FlaskConical } from 'lucide-react';
 
 const STATS = [
-  { Icon: Users, value: 25000, suffix: '+', label: 'Happy Patients', color: 'from-medical-teal to-emerald-500' },
-  { Icon: Stethoscope, value: 35, suffix: '+', label: 'Specialist Doctors', color: 'from-royal-blue to-sky-500' },
+  { Icon: Users, value: 25000, suffix: '+', label: 'Happy Patients', color: 'from-medical-teal to-[#c02736]' },
+  { Icon: Stethoscope, value: 35, suffix: '+', label: 'Specialist Doctors', color: 'from-royal-blue to-[#23244a]' },
   { Icon: Ambulance, value: 24, suffix: '/7', label: 'Emergency & Trauma', color: 'from-red-500 to-rose-500' },
   { Icon: FlaskConical, value: 100, suffix: '%', label: 'Digital Lab & Records', color: 'from-violet-500 to-purple-500' },
 ];

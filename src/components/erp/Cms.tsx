@@ -115,7 +115,7 @@ export default function Cms() {
             <div key={i.id} className="border border-soft-border rounded-xl p-3 text-sm">
               <div className="flex items-center justify-between">
                 <p className="font-semibold">{i.name} <span className="text-xs text-slate-400">· {i.phone || i.email}</span></p>
-                <span className={`text-[11px] px-2 py-0.5 rounded-full ${i.status === 'resolved' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>{i.status}</span>
+                <span className={`text-[11px] px-2 py-0.5 rounded-full ${i.status === 'resolved' ? 'bg-[#fdeef0] text-[#8f1d28]' : 'bg-amber-100 text-amber-700'}`}>{i.status}</span>
               </div>
               <p className="text-slate-500 mt-1">{i.message}</p>
             </div>

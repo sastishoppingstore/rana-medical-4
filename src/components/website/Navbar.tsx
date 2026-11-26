@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="container-x flex items-center justify-between py-2 px-4">
           <div className="flex items-center gap-5">
             <span className="flex items-center gap-2"><Phone size={14} className="text-medical-teal" /> 24/7 Emergency: {HOSPITAL.phone}</span>
-            <span className="flex items-center gap-2"><Activity size={14} className="text-emerald-400" /> Live: Emergency & OPD Operational</span>
+            <span className="flex items-center gap-2"><Activity size={14} className="text-[#d4545f]" /> Live: Emergency & OPD Operational</span>
           </div>
           <a href={HOSPITAL.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-medical-teal transition">
             <MessageCircle size={14} /> WhatsApp

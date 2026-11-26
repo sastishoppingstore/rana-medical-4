@@ -61,7 +61,7 @@ export default function DoctorsDirectory() {
                   <div className="flex justify-between items-center"><span className="text-slate-400">PMDC</span><span className="text-xs text-slate-400 flex items-center gap-1"><BadgeCheck size={13} /> {d.pmdc || '—'}</span></div>
                 </div>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-emerald-600">{d.available_slots} slots available</span>
+                  <span className="text-xs font-semibold text-[#a02030]">{d.available_slots} slots available</span>
                   <a href="#appointment" className="btn-primary !py-2 !px-4 text-sm">Book <ChevronRight size={15} /></a>
                 </div>
                 <p className="text-[10px] text-slate-300 mt-3">Demo profile — fictional PMDC references are placeholders.</p>

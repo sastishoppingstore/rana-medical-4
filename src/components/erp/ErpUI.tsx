@@ -24,7 +24,7 @@ export function KpiCard({ label, value, sub, Icon, accent = 'from-medical-teal t
         </div>
         <span className={`w-11 h-11 rounded-2xl bg-gradient-to-br ${accent} text-white grid place-items-center shadow-premium`}><Icon size={20} /></span>
       </div>
-      {trend && <p className="text-xs text-emerald-600 font-semibold mt-2">{trend}</p>}
+      {trend && <p className="text-xs text-[#a02030] font-semibold mt-2">{trend}</p>}
     </motion.div>
   );
 }
@@ -41,22 +41,22 @@ export function ErpCard({ title, children, className = '' }: { title?: string; c
 export function StatusBadge({ status }: { status: string }) {
   const map: Record<string, string> = {
     waiting: 'bg-amber-100 text-amber-700',
-    with_doctor: 'bg-blue-100 text-blue-700',
-    completed: 'bg-emerald-100 text-emerald-700',
+    with_doctor: 'bg-[#e6e4f0] text-[#1c1b38]',
+    completed: 'bg-[#fdeef0] text-[#8f1d28]',
     cancelled: 'bg-red-100 text-red-700',
-    active: 'bg-emerald-100 text-emerald-700',
+    active: 'bg-[#fdeef0] text-[#8f1d28]',
     occupied: 'bg-red-100 text-red-700',
-    available: 'bg-emerald-100 text-emerald-700',
+    available: 'bg-[#fdeef0] text-[#8f1d28]',
     maintenance: 'bg-amber-100 text-amber-700',
     pending: 'bg-amber-100 text-amber-700',
-    verified: 'bg-blue-100 text-blue-700',
-    published: 'bg-emerald-100 text-emerald-700',
-    collected: 'bg-blue-100 text-blue-700',
+    verified: 'bg-[#e6e4f0] text-[#1c1b38]',
+    published: 'bg-[#fdeef0] text-[#8f1d28]',
+    collected: 'bg-[#e6e4f0] text-[#1c1b38]',
     entered: 'bg-purple-100 text-purple-700',
     discharged: 'bg-slate-100 text-slate-600',
-    admitted: 'bg-emerald-100 text-emerald-700',
+    admitted: 'bg-[#fdeef0] text-[#8f1d28]',
     open: 'bg-amber-100 text-amber-700',
-    resolved: 'bg-emerald-100 text-emerald-700',
+    resolved: 'bg-[#fdeef0] text-[#8f1d28]',
   };
   return <span className={`text-[11px] font-bold px-2.5 py-1 rounded-full ${map[status] || 'bg-slate-100 text-slate-600'}`}>{status.replace('_', ' ')}</span>;
 }

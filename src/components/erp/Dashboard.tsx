@@ -24,13 +24,13 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <KpiCard label="Today's OPD" value={stats.opdToday} sub="patients registered" Icon={Users} />
-        <KpiCard label="Active IPD" value={stats.ipdActive} sub="in-house patients" Icon={BedDouble} accent="from-royal-blue to-sky-500" />
-        <KpiCard label="Cash Revenue" value={PKR(stats.cashRevenue)} sub="today" Icon={Wallet} accent="from-emerald-500 to-teal-500" />
+        <KpiCard label="Active IPD" value={stats.ipdActive} sub="in-house patients" Icon={BedDouble} accent="from-royal-blue to-[#23244a]" />
+        <KpiCard label="Cash Revenue" value={PKR(stats.cashRevenue)} sub="today" Icon={Wallet} accent="from-[#c02736] to-[#c02736]" />
         <KpiCard label="Online Revenue" value={PKR(stats.onlineRevenue)} sub="today" Icon={Smartphone} accent="from-violet-500 to-purple-500" />
         <KpiCard label="Pending Labs" value={stats.pendingLabs} sub="reports to authorize" Icon={FlaskConical} accent="from-amber-500 to-orange-500" />
         <KpiCard label="Low Stock" value={stats.lowStock} sub="medicine alerts" Icon={PackageX} accent="from-rose-500 to-red-500" />
-        <KpiCard label="Daily Expense" value={PKR(stats.dailyExpense)} sub="today" Icon={TrendingUp} accent="from-slate-500 to-slate-700" />
-        <KpiCard label="Net Profit" value={PKR(stats.netProfit)} sub="today (income − expense)" Icon={Activity} accent="from-teal-500 to-emerald-600" />
+        <KpiCard label="Daily Expense" value={PKR(stats.dailyExpense)} sub="today" Icon={TrendingUp} accent="[#6b5b60] to-slate-700" />
+        <KpiCard label="Net Profit" value={PKR(stats.netProfit)} sub="today (income − expense)" Icon={Activity} accent="from-[#c02736] to-[#a02030]" />
       </div>
 
       <div className="grid lg:grid-cols-3 gap-5">
@@ -40,7 +40,7 @@ export default function Dashboard() {
               <div key={i} className="grid grid-cols-[60px_1fr_1fr] items-center gap-3 text-xs">
                 <span className="text-slate-400">{d.date}</span>
                 <div className="flex items-center gap-2">
-                  <div className="h-3 rounded-full bg-emerald-400" style={{ width: `${(d.income / maxIE) * 100}%` }} />
+                  <div className="h-3 rounded-full bg-[#d4545f]" style={{ width: `${(d.income / maxIE) * 100}%` }} />
                   <span className="text-slate-500">{PKR(d.income)}</span>
                 </div>
                 <div className="flex items-center gap-2">

@@ -22,7 +22,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
         <AnimatePresence>
           {toasts.map((t) => (
             <motion.div key={t.id} initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 40 }}
-              className={`glass rounded-2xl shadow-premium px-4 py-3 flex items-start gap-3 ${t.type === 'error' ? 'border-red-300' : t.type === 'info' ? 'border-blue-300' : 'border-emerald-300'}`}>
+              className={`glass rounded-2xl shadow-premium px-4 py-3 flex items-start gap-3 ${t.type === 'error' ? 'border-red-300' : t.type === 'info' ? 'border-[#d9d3e8]' : 'border-[#e3b6bc]'}`}>
               {t.type === 'success' ? <CheckCircle2 className="text-medical-teal mt-0.5" size={20} /> :
                t.type === 'error' ? <AlertTriangle className="text-red-500 mt-0.5" size={20} /> :
                <Info className="text-royal-blue mt-0.5" size={20} />}

@@ -75,7 +75,7 @@ export default function IpdBeds() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <ErpCard><p className="text-xs text-slate-400">Total Beds</p><p className="font-display text-2xl font-extrabold">{beds.length}</p></ErpCard>
         <ErpCard><p className="text-xs text-slate-400">Occupied</p><p className="font-display text-2xl font-extrabold text-red-500">{occupied}</p></ErpCard>
-        <ErpCard><p className="text-xs text-slate-400">Available</p><p className="font-display text-2xl font-extrabold text-emerald-500">{beds.length - occupied}</p></ErpCard>
+        <ErpCard><p className="text-xs text-slate-400">Available</p><p className="font-display text-2xl font-extrabold text-[#c02736]">{beds.length - occupied}</p></ErpCard>
         <ErpCard><p className="text-xs text-slate-400">Active Admissions</p><p className="font-display text-2xl font-extrabold">{admissions.length}</p></ErpCard>
       </div>
 
@@ -87,7 +87,7 @@ export default function IpdBeds() {
                 const adm = admMap[b.id];
                 return (
                   <div key={b.id} title={b.bed_no} className={`aspect-square rounded-xl grid place-items-center text-xs font-bold border ${
-                    b.status === 'occupied' ? 'bg-red-50 border-red-200 text-red-600' : b.status === 'maintenance' ? 'bg-amber-50 border-amber-200 text-amber-600' : 'bg-emerald-50 border-emerald-200 text-emerald-600'
+                    b.status === 'occupied' ? 'bg-red-50 border-red-200 text-red-600' : b.status === 'maintenance' ? 'bg-amber-50 border-amber-200 text-amber-600' : 'bg-[#fdeef0] border-[#f7d3d8] text-[#a02030]'
                   }`}>
                     <div className="text-center">
                       <BedDouble size={16} className="mx-auto" />

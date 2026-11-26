@@ -174,8 +174,8 @@ export default function OpdTokens() {
                   </div>
                   <div className="flex gap-2 mt-2">
                     <button onClick={() => setPrintTok({ ...t, patient: pat, doctor: doc })} className="btn-ghost !py-1 !px-2 text-xs"><Printer size={13} /></button>
-                    {t.status === 'waiting' && <button onClick={() => setStatus(t.id, 'with_doctor')} className="btn-ghost !py-1 !px-2 text-xs text-blue-600"><Clock size={13} /> Call</button>}
-                    {t.status === 'with_doctor' && <button onClick={() => setStatus(t.id, 'completed')} className="btn-ghost !py-1 !px-2 text-xs text-emerald-600"><CheckCircle2 size={13} /> Done</button>}
+                    {t.status === 'waiting' && <button onClick={() => setStatus(t.id, 'with_doctor')} className="btn-ghost !py-1 !px-2 text-xs text-[#23244a]"><Clock size={13} /> Call</button>}
+                    {t.status === 'with_doctor' && <button onClick={() => setStatus(t.id, 'completed')} className="btn-ghost !py-1 !px-2 text-xs text-[#a02030]"><CheckCircle2 size={13} /> Done</button>}
                     {(t.status === 'waiting' || t.status === 'with_doctor') && <button onClick={() => setStatus(t.id, 'cancelled')} className="btn-ghost !py-1 !px-2 text-xs text-red-500"><XCircle size={13} /></button>}
                   </div>
                 </div>

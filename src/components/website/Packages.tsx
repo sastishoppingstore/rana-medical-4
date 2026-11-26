@@ -38,7 +38,7 @@ export default function Packages() {
                 </ul>
                 <div className="mt-5 flex flex-col gap-2">
                   <a href="#appointment" className="btn-primary w-full"><CalendarPlus size={16} /> Book Now</a>
-                  <a href={`${HOSPITAL.whatsapp}?text=${encodeURIComponent('Inquiry about ' + p.title + ' package')}`} target="_blank" rel="noreferrer" className="btn-ghost w-full text-sm"><MessageCircle size={16} className="text-emerald-500" /> WhatsApp Inquiry</a>
+                  <a href={`${HOSPITAL.whatsapp}?text=${encodeURIComponent('Inquiry about ' + p.title + ' package')}`} target="_blank" rel="noreferrer" className="btn-ghost w-full text-sm"><MessageCircle size={16} className="text-[#c02736]" /> WhatsApp Inquiry</a>
                 </div>
               </motion.div>
             ))}
